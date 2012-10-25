@@ -170,7 +170,7 @@
 </string>
 
 		<!-- Add Categories -->
-		<key>Source Code/Categories/NSObject+DNExtras.h</key>
+		<key>Source Code/Categories/NSObject+NSCoding.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -178,9 +178,9 @@
 				<string>Categories</string>
 			</array>
 			<key>Path</key>
-			<string>NSObject+DNExtras.h</string>
+			<string>NSObject+NSCoding.h</string>
 		</dict>
-		<key>Source Code/Categories/NSObject+DNExtras.m</key>
+		<key>Source Code/Categories/NSObject+NSCoding.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -188,7 +188,7 @@
 				<string>Categories</string>
 			</array>
 			<key>Path</key>
-			<string>NSObject+DNExtras.m</string>
+			<string>NSObject+NSCoding.m</string>
 		</dict>
 		<key>Source Code/Categories/NSMutableArray+DNExtras.h</key>
 		<dict>
