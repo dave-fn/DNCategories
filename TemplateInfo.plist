@@ -49,7 +49,7 @@
 		<string>Source Code/Other/main.m:import:importCocoa</string>
 		<string>Source Code/Other/Prefix.pch:Availability</string>
 		<string>Source Code/Other/Prefix.pch:objC:importCocoa</string>
-		<string>___PACKAGENAME___-Info.plist:Basics</string>
+		<string>Supporting Files/___PACKAGENAME___-Info.plist:Basics</string>
 	</array>
 	
 	<!--  Definitions  -->
@@ -154,7 +154,7 @@
 		</dict>
     
     <!-- Definition: main.m, implementation declarations, synthesize, -Info.plist -->
-		<key>___PACKAGENAME___-Info.plist:Basics</key>
+		<key>Supporting Files/___PACKAGENAME___-Info.plist:Basics</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;en&lt;/string&gt;
 &lt;key&gt;CFBundleExecutable&lt;/key&gt;
