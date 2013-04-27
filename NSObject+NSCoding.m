@@ -16,22 +16,20 @@
 
 
 // *********************************************************************************************************************
-//  - initWithCoder:
+// - initWithCoder:
 // *********************************************************************************************************************
 - (id) initWithCoder:(NSCoder*)decoder
 {
   return [self init];
 }
 
-
 // *********************************************************************************************************************
-//  - encodeWithCoder:
+// - encodeWithCoder:
 // *********************************************************************************************************************
 - (void) encodeWithCoder:(NSCoder*)encoder {}
 
-
 // *********************************************************************************************************************
-//  - observeKeyPath: ofObject:
+// - observeKeyPath: ofObject:
 // *********************************************************************************************************************
 - (void) observeKeyPath:(NSString*)keyPath ofObject:(id)anObject
 {
@@ -40,18 +38,16 @@
                 options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:NULL];
 }
 
-
 // *********************************************************************************************************************
-//  - observeKeyPath: ofObject: options:
+// - observeKeyPath: ofObject: options:
 // *********************************************************************************************************************
 - (void) observeKeyPath:(NSString*)keyPath ofObject:(id)anObject options:(NSKeyValueObservingOptions)options
 {
   [anObject addObserver:self forKeyPath:keyPath options:options context:NULL];
 }
 
-
 // *********************************************************************************************************************
-//  - stopObservingKeyPath: ofObject:
+// - stopObservingKeyPath: ofObject:
 // *********************************************************************************************************************
 - (void) stopObservingKeyPath:(NSString*)keyPath ofObject:(id)anObject
 {

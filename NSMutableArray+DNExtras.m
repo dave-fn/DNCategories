@@ -16,7 +16,7 @@
 
 
 // *********************************************************************************************************************
-//  - moveObjectAtIndex: toIndex:
+// - moveObjectAtIndex: toIndex:
 // *********************************************************************************************************************
 - (void) moveObjectAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex
 {
@@ -32,7 +32,6 @@
     [self insertObject:anObject atIndex:toIndex];
   }
 }
-
 
 
 @end

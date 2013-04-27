@@ -16,7 +16,7 @@
 
 
 // *********************************************************************************************************************
-//  - stringByRemovingOccurrencesOfStrings:
+// - stringByRemovingOccurrencesOfStrings:
 // *********************************************************************************************************************
 - (NSString*) stringByRemovingOccurrencesOfStrings:(NSArray*)stringArray
 {
@@ -29,24 +29,49 @@
   return newString;
 }
 
-
 // *********************************************************************************************************************
-//  - stringByCapitalizingFirstLetter
+// - stringByCapitalizingFirstLetter
 // *********************************************************************************************************************
 - (NSString*) stringByCapitalizingFirstLetter
 {
   return [NSString stringWithFormat:@"%@%@",[[self substringToIndex:1] uppercaseString],[self substringFromIndex:1]];
 }
 
-
 // *********************************************************************************************************************
-//  - stringWithLowercaseFirstLetter
+// - stringWithLowercaseFirstLetter
 // *********************************************************************************************************************
 - (NSString*) stringWithLowercaseFirstLetter
 {
   return [NSString stringWithFormat:@"%@%@",[[self substringToIndex:1] lowercaseString],[self substringFromIndex:1]];
 }
 
+// *********************************************************************************************************************
+// - substringBetweenString: andString:
+// *********************************************************************************************************************
+- (NSString*) substringBetweenString:(NSString*)firstString andString:(NSString*)secondString
+{
+  NSRange substringRange;
+  
+  // Find beginning point
+  NSRange firstRange = [self rangeOfString:firstString];
+  if( firstRange.location == NSNotFound ) {
+    return nil;
+  }
+  substringRange.location = firstRange.location + firstRange.length;
+  
+  // Find ending point
+  NSUInteger stringLength = [self length];
+  NSRange splitStringRange = NSMakeRange(substringRange.location, stringLength - substringRange.location);
+  NSRange secondRange = [self rangeOfString:secondString options:NULL range:splitStringRange];
+  if( secondRange.location == NSNotFound ) {
+    return nil;
+  }
+  
+  // Make range with points
+  substringRange.length = secondRange.location - substringRange.location;
+  
+  return [self substringWithRange:substringRange];
+}
 
 
 @end
