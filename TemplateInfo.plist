@@ -47,7 +47,7 @@
 	<array>
 		<string>Source Code/Other/main.m:comments</string>
 		<string>Source Code/Other/main.m:import:importCocoa</string>
-		<string>Source Code/Other/Prefix.pch:Availability</string>
+		<string>Source Code/Other/Prefix.pch:Availability</string>   <!-- what is this? -->
 		<string>Source Code/Other/Prefix.pch:objC:importCocoa</string>
 		<string>Supporting Files/___PACKAGENAME___-Info.plist:Basics</string>
 	</array>

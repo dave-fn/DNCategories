@@ -9,18 +9,16 @@
 // *********************************************************************************************************************
 
 
-/**
- * @category NSMutableArray(DNExtras)
+/** @category NSMutableArray(DNExtras)
  * NSMutableArray category implements one method to switch objects within the collection.
-**/
+ */
 @interface NSMutableArray(DNExtras)
 
 
-/**
- * Moves an object to a new position within the array.
+/** Moves an object to a new position within the array.
  * @param fromIndex The index position of the object.
  * @param toIndex The index position to which the object will be moved.
-**/
+ */
 - (void) moveObjectAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex;
 
 
