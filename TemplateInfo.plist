@@ -45,10 +45,10 @@
 	<!--  Nodes  -->
 	<key>Nodes</key>
 	<array>
-		<string>Source Code/Other/main.m:comments</string>
-		<string>Source Code/Other/main.m:import:importCocoa</string>
-		<string>Source Code/Other/Prefix.pch:Availability</string>   <!-- what is this? -->
-		<string>Source Code/Other/Prefix.pch:objC:importCocoa</string>
+		<string>Other/main.m:comments</string>
+		<string>Other/main.m:import:importCocoa</string>
+		<string>Other/Prefix.pch:Availability</string>   <!-- what is this? -->
+		<string>Other/Prefix.pch:objC:importCocoa</string>
 		<string>Supporting Files/___PACKAGENAME___-Info.plist:Basics</string>
 	</array>
 	
@@ -58,7 +58,7 @@
 	<dict>
   
     <!-- Definition: main.m -->
-		<key>Source Code/Other/main.m</key>
+		<key>Other/main.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -68,7 +68,7 @@
 		</dict>
     
     <!-- Definition: main.m - main() -->
-		<key>Source Code/Other/main.m:main</key>
+		<key>Other/main.m:main</key>
 		<dict>
 			<key>Beginning</key>
 			<string>int main(int argc, char *argv[]) {</string>
@@ -170,7 +170,17 @@
 </string>
 
 		<!-- Add Categories -->
-		<key>Source Code/Categories/NSObject+NSCoding.h</key>
+		<key>Categories/DNCategories.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>DNCategories.h</string>
+		</dict>
+		<key>Categories/NSObject+NSCoding.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -180,7 +190,7 @@
 			<key>Path</key>
 			<string>NSObject+NSCoding.h</string>
 		</dict>
-		<key>Source Code/Categories/NSObject+NSCoding.m</key>
+		<key>Categories/NSObject+NSCoding.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -190,7 +200,7 @@
 			<key>Path</key>
 			<string>NSObject+NSCoding.m</string>
 		</dict>
-		<key>Source Code/Categories/NSMutableArray+DNExtras.h</key>
+		<key>Categories/NSMutableArray+DNExtras.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -200,7 +210,7 @@
 			<key>Path</key>
 			<string>NSMutableArray+DNExtras.h</string>
 		</dict>
-		<key>Source Code/Categories/NSMutableArray+DNExtras.m</key>
+		<key>Categories/NSMutableArray+DNExtras.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -210,7 +220,7 @@
 			<key>Path</key>
 			<string>NSMutableArray+DNExtras.m</string>
 		</dict>
-		<key>Source Code/Categories/NSString+DNExtras.h</key>
+		<key>Categories/NSString+DNExtras.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -220,7 +230,7 @@
 			<key>Path</key>
 			<string>NSString+DNExtras.h</string>
 		</dict>
-		<key>Source Code/Categories/NSString+DNExtras.m</key>
+		<key>Categories/NSString+DNExtras.m</key>
 		<dict>
 			<key>Group</key>
 			<array>

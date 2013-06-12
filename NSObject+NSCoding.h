@@ -3,16 +3,11 @@
 //   Description:  Include file.
 //   Author Name:  Outis at http://stackoverflow.com/questions/4317164/save-own-class-with-nscoder / David F. Negrete
 // *********************************************************************************************************************
-//   Date         Description
-//   ----------   ----------------------------------------------------------------------------------------------------
-//   2012.08.14   Initial Creation.
-// *********************************************************************************************************************
 
 
-/** @category NSObject(NSCoding)
- * NSObject Category implementing the NSCoding Protocol.
- * This allows to call [super initWithCoder:] and not require to verify that the superclass
- * implements it or not.
+/** NSObject category implementing the NSCoding Protocol.
+ *
+ * This allows to call super initWithCoder: and not require to verify that the superclass implements it or not.
  */
 @interface NSObject(NSCoding)
 
@@ -28,15 +23,13 @@
  */
 - (void) encodeWithCoder:(NSCoder*)encoder;
 
-/** Convenience method.
- * Specifies no options and null context.
+/** Convenience method specifies no options and null context.
  * @param keyPath Key Path to observe.
  * @param anObject The object to observe.
  */
 - (void) observeKeyPath:(NSString*)keyPath ofObject:(id)anObject;
 
-/** Convenience method.
- * Specifies null context.
+/** Convenience method specifies null context.
  * @param keyPath Key Path to observe.
  * @param anObject The object to observe.
  * @param options The Key Value Observing options.

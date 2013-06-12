@@ -1,11 +1,7 @@
 // *********************************************************************************************************************
 //   Module Name:  NSMutableArray+DNExtras.m
-//   Description:  NSMutableArray Category.
+//   Description:  NSMutableArray category.
 //   Author Name:  David F. Negrete
-// *********************************************************************************************************************
-//   Date         Description
-//   ----------   ----------------------------------------------------------------------------------------------------
-//   2012.09.13   Initial Creation.
 // *********************************************************************************************************************
 
 
@@ -22,17 +18,38 @@
 {
   if( fromIndex != toIndex ) {
     id anObject = self[fromIndex];
-    
     [self removeObjectAtIndex:fromIndex];
-    
-    if( toIndex > fromIndex ) {
-      toIndex--;
-    }
-    
     [self insertObject:anObject atIndex:toIndex];
   }
 }
 
+// *********************************************************************************************************************
+// - select:
+// *********************************************************************************************************************
+- (void) select:(BOOL(^)(id arrayObject))selectBlock
+{
+  [self reject:^BOOL(id anObject) {
+    return !selectBlock(anObject);
+  }];
+}
+
+// *********************************************************************************************************************
+// - reject:
+// *********************************************************************************************************************
+- (void) reject:(BOOL(^)(id arrayObject))rejectBlock
+{
+  NSMutableIndexSet *indexesOfRejected = [NSMutableIndexSet indexSet];
+  
+  NSUInteger objectIndex = 0;
+  for( id anObject in self ) {
+    if( rejectBlock(anObject) ) {
+      [indexesOfRejected addIndex:objectIndex];
+    }
+    objectIndex++;
+  }
+  
+  [self removeObjectsAtIndexes:indexesOfRejected];
+}
+
 
 @end
-

@@ -3,17 +3,17 @@
 //   Description:  Include file.
 //   Author Name:  David F. Negrete
 // *********************************************************************************************************************
-//   Date         Description
-//   ----------   ----------------------------------------------------------------------------------------------------
-//   2012.08.14   Initial Creation.
-// *********************************************************************************************************************
 
 
-/** @category NSString(DNExtras)
- * NSString category implements convenience methods.
- */
+/// NSString category implements convenience methods.
 @interface NSString(DNExtras)
 
+
+/** Remove a substring from another string.
+ * @param substring A string object.
+ * @return A new string object.
+ */
+- (NSString*) stringByRemovingOccurrencesOfString:(NSString*)substring;
 
 /** Remove an arbitrary number of strings from another string.
  * @param stringArray An array of strings.

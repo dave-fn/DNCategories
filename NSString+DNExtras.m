@@ -1,11 +1,7 @@
 // *********************************************************************************************************************
 //   Module Name:  NSString+DNExtras.m
-//   Description:  NSString Category.
+//   Description:  NSString category.
 //   Author Name:  David F. Negrete
-// *********************************************************************************************************************
-//   Date         Description
-//   ----------   ----------------------------------------------------------------------------------------------------
-//   2012.08.14   Initial Creation.
 // *********************************************************************************************************************
 
 
@@ -16,13 +12,21 @@
 
 
 // *********************************************************************************************************************
+// - stringByRemovingOccurrencesOfString:
+// *********************************************************************************************************************
+- (NSString*) stringByRemovingOccurrencesOfString:(NSString*)substring
+{
+  return [self stringByReplacingOccurrencesOfString:substring withString:@""];
+}
+
+// *********************************************************************************************************************
 // - stringByRemovingOccurrencesOfStrings:
 // *********************************************************************************************************************
 - (NSString*) stringByRemovingOccurrencesOfStrings:(NSArray*)stringArray
 {
   NSString *newString = self;
   
-  for(NSString *stringToReplace in stringArray ) {
+  for( NSString *stringToReplace in stringArray ) {
     newString = [newString stringByReplacingOccurrencesOfString:stringToReplace withString:@""];
   }
   
@@ -75,4 +79,3 @@
 
 
 @end
-
