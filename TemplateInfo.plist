@@ -170,6 +170,8 @@
 </string>
 
 		<!-- Add Categories -->
+
+		<!-- Include file -->
 		<key>Categories/DNCategories.h</key>
 		<dict>
 			<key>Group</key>
@@ -180,6 +182,8 @@
 			<key>Path</key>
 			<string>DNCategories.h</string>
 		</dict>
+
+		<!-- NSObject -->
 		<key>Categories/NSObject+NSCoding.h</key>
 		<dict>
 			<key>Group</key>
@@ -200,6 +204,50 @@
 			<key>Path</key>
 			<string>NSObject+NSCoding.m</string>
 		</dict>
+
+		<key>Categories/NSObject+DynamicRuntime.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSObject+DynamicRuntime.h</string>
+		</dict>
+		<key>Categories/NSObject+DynamicRuntime.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSObject+DynamicRuntime.m</string>
+		</dict>
+
+		<!-- Array -->
+		<key>Categories/NSArray+DNExtras.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSArray+DNExtras.h</string>
+		</dict>
+		<key>Categories/NSArray+DNExtras.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSArray+DNExtras.m</string>
+		</dict>
+
 		<key>Categories/NSMutableArray+DNExtras.h</key>
 		<dict>
 			<key>Group</key>
@@ -220,6 +268,116 @@
 			<key>Path</key>
 			<string>NSMutableArray+DNExtras.m</string>
 		</dict>
+
+		<!-- Dictionary -->
+		<key>Categories/NSDictionary+DNExtras.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSDictionary+DNExtras.h</string>
+		</dict>
+		<key>Categories/NSDictionary+DNExtras.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSDictionary+DNExtras.m</string>
+		</dict>
+
+		<!-- File Manager -->
+		<key>Categories/NSFileManager+DNExtras.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSFileManager+DNExtras.h</string>
+		</dict>
+		<key>Categories/NSFileManager+DNExtras.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSFileManager+DNExtras.m</string>
+		</dict>
+
+		<!-- Core Data -->
+		<key>Categories/NSManagedObject+DNDynamic.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObject+DNDynamic.h</string>
+		</dict>
+		<key>Categories/NSManagedObject+DNDynamic.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObject+DNDynamic.m</string>
+		</dict>
+
+		<key>Categories/NSManagedObjectContext+DNDynamic.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObjectContext+DNDynamic.h</string>
+		</dict>
+		<key>Categories/NSManagedObjectContext+DNDynamic.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObjectContext+DNDynamic.m</string>
+		</dict>
+
+		<key>Categories/NSManagedObjectContext+DNExtras.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObjectContext+DNExtras.h</string>
+		</dict>
+		<key>Categories/NSManagedObjectContext+DNExtras.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObjectContext+DNExtras.m</string>
+		</dict>
+
+		<!-- String -->
 		<key>Categories/NSString+DNExtras.h</key>
 		<dict>
 			<key>Group</key>
@@ -240,7 +398,97 @@
 			<key>Path</key>
 			<string>NSString+DNExtras.m</string>
 		</dict>
+
+		<!-- UI -->
+		<key>Categories/NSDatePicker+DNExtras.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSDatePicker+DNExtras.h</string>
+		</dict>
+		<key>Categories/NSDatePicker+DNExtras.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Categories</string>
+			</array>
+			<key>Path</key>
+			<string>NSDatePicker+DNExtras.m</string>
+		</dict>
+
 		<!-- Add Categories -->
+		
+
+		<!-- Add Models -->
+
+		<!-- Core Data -->
+		<key>Model/DNOrderedManagedObject.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Model</string>
+			</array>
+			<key>Path</key>
+			<string>DNOrderedManagedObject.h</string>
+		</dict>
+		<key>Model/DNOrderedManagedObject.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Model</string>
+			</array>
+			<key>Path</key>
+			<string>DNOrderedManagedObject.m</string>
+		</dict>
+
+		<!-- Add Models -->
+
+
+		<!-- Add Protocols -->
+
+		<!-- Include file -->
+		<key>Protocols/DNProtocols.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>DNProtocols.h</string>
+		</dict>
+
+		<!-- Core Data -->
+		<key>Protocols/DNCoreDataControllerDelegate.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>DNCoreDataControllerDelegate.h</string>
+		</dict>
+
+		<key>Protocols/NSManagedObjectDynamic.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Source Code</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>NSManagedObjectDynamic.h</string>
+		</dict>
+
+		<!-- Add Protocols -->
 		
 	</dict>
   

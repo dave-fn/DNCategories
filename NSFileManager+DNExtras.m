@@ -63,7 +63,7 @@
     return nil;
   }
   
-  if( (!properties) && ([resourceError code] == NSFileReadNoSuchFileError) ) {
+  if( !properties && ([resourceError code] == NSFileReadNoSuchFileError) ) {
     NSError *createError;
     BOOL createdDirectory = [self createDirectoryAtPath:[appSupportURL path]
                             withIntermediateDirectories:YES
